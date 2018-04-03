@@ -177,6 +177,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/Proyecto1.dir/build.make CMakeFiles/Proyecto1.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+mserver.o: mserver.cpp.o
+
+.PHONY : mserver.o
+
+# target to build an object file
+mserver.cpp.o:
+	$(MAKE) -f CMakeFiles/Proyecto1.dir/build.make CMakeFiles/Proyecto1.dir/mserver.cpp.o
+.PHONY : mserver.cpp.o
+
+mserver.i: mserver.cpp.i
+
+.PHONY : mserver.i
+
+# target to preprocess a source file
+mserver.cpp.i:
+	$(MAKE) -f CMakeFiles/Proyecto1.dir/build.make CMakeFiles/Proyecto1.dir/mserver.cpp.i
+.PHONY : mserver.cpp.i
+
+mserver.s: mserver.cpp.s
+
+.PHONY : mserver.s
+
+# target to generate assembly for a file
+mserver.cpp.s:
+	$(MAKE) -f CMakeFiles/Proyecto1.dir/build.make CMakeFiles/Proyecto1.dir/mserver.cpp.s
+.PHONY : mserver.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -192,6 +219,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... mserver.o"
+	@echo "... mserver.i"
+	@echo "... mserver.s"
 .PHONY : help
 
 

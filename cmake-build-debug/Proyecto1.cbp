@@ -93,6 +93,12 @@
 		<Unit filename="/home/eduardo/CLionProjects/Proyecto1/main.cpp">
 			<Option target="Proyecto1"/>
 		</Unit>
+		<Unit filename="/home/eduardo/CLionProjects/Proyecto1/mserver.cpp">
+			<Option target="Proyecto1"/>
+		</Unit>
+		<Unit filename="/home/eduardo/CLionProjects/Proyecto1/mserver.h">
+			<Option target="Proyecto1"/>
+		</Unit>
 		<Unit filename="/home/eduardo/CLionProjects/Proyecto1/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

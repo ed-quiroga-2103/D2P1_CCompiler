@@ -3,4 +3,4 @@ project(Proyecto1)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(Proyecto1 main.cpp Logger.cpp Logger.h)
+add_executable(Proyecto1 main.cpp Logger.cpp Logger.h mserver.cpp mserver.h)

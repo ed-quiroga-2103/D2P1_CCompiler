@@ -1,12 +1,16 @@
 #include <iostream>
 #include "Logger.h"
+#include "nlohmann/json.hpp"
 
+using json = nlohmann::json;
 
 int main() {
 
-    Logger log;
+    json j;
 
-    log.newLog("Sintax Error.", 456);
+    j["asd"] = 123;
+
+    std::cout << j["asd"];
 
     return 0;
 

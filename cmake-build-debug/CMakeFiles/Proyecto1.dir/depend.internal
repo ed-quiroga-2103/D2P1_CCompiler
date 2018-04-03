@@ -7,3 +7,7 @@ CMakeFiles/Proyecto1.dir/Logger.cpp.o
 CMakeFiles/Proyecto1.dir/main.cpp.o
  /home/eduardo/CLionProjects/Proyecto1/Logger.h
  /home/eduardo/CLionProjects/Proyecto1/main.cpp
+ /home/eduardo/CLionProjects/Proyecto1/nlohmann/json.hpp
+CMakeFiles/Proyecto1.dir/mserver.cpp.o
+ /home/eduardo/CLionProjects/Proyecto1/mserver.cpp
+ /home/eduardo/CLionProjects/Proyecto1/mserver.h

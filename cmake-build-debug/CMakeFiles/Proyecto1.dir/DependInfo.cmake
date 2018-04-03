@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/eduardo/CLionProjects/Proyecto1/Logger.cpp" "/home/eduardo/CLionProjects/Proyecto1/cmake-build-debug/CMakeFiles/Proyecto1.dir/Logger.cpp.o"
   "/home/eduardo/CLionProjects/Proyecto1/main.cpp" "/home/eduardo/CLionProjects/Proyecto1/cmake-build-debug/CMakeFiles/Proyecto1.dir/main.cpp.o"
+  "/home/eduardo/CLionProjects/Proyecto1/mserver.cpp" "/home/eduardo/CLionProjects/Proyecto1/cmake-build-debug/CMakeFiles/Proyecto1.dir/mserver.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

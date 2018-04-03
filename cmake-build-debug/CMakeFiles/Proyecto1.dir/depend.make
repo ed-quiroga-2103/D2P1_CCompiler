@@ -6,4 +6,8 @@ CMakeFiles/Proyecto1.dir/Logger.cpp.o: ../Logger.h
 
 CMakeFiles/Proyecto1.dir/main.cpp.o: ../Logger.h
 CMakeFiles/Proyecto1.dir/main.cpp.o: ../main.cpp
+CMakeFiles/Proyecto1.dir/main.cpp.o: ../nlohmann/json.hpp
+
+CMakeFiles/Proyecto1.dir/mserver.cpp.o: ../mserver.cpp
+CMakeFiles/Proyecto1.dir/mserver.cpp.o: ../mserver.h
 
