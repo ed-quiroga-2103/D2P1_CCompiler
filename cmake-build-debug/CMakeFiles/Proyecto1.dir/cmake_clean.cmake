@@ -1,7 +1,9 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Proyecto1.dir/main.cpp.o"
   "CMakeFiles/Proyecto1.dir/Logger.cpp.o"
-  "CMakeFiles/Proyecto1.dir/mserver.cpp.o"
+  "CMakeFiles/Proyecto1.dir/mserver_client.cpp.o"
+  "CMakeFiles/Proyecto1.dir/Parser.cpp.o"
+  "CMakeFiles/Proyecto1.dir/Compiler.cpp.o"
   "Proyecto1.pdb"
   "Proyecto1"
 )

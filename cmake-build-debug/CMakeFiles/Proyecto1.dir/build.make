@@ -105,45 +105,97 @@ CMakeFiles/Proyecto1.dir/Logger.cpp.o.provides: CMakeFiles/Proyecto1.dir/Logger.
 CMakeFiles/Proyecto1.dir/Logger.cpp.o.provides.build: CMakeFiles/Proyecto1.dir/Logger.cpp.o
 
 
-CMakeFiles/Proyecto1.dir/mserver.cpp.o: CMakeFiles/Proyecto1.dir/flags.make
-CMakeFiles/Proyecto1.dir/mserver.cpp.o: ../mserver.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eduardo/CLionProjects/Proyecto1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Proyecto1.dir/mserver.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Proyecto1.dir/mserver.cpp.o -c /home/eduardo/CLionProjects/Proyecto1/mserver.cpp
+CMakeFiles/Proyecto1.dir/mserver_client.cpp.o: CMakeFiles/Proyecto1.dir/flags.make
+CMakeFiles/Proyecto1.dir/mserver_client.cpp.o: ../mserver_client.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eduardo/CLionProjects/Proyecto1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Proyecto1.dir/mserver_client.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Proyecto1.dir/mserver_client.cpp.o -c /home/eduardo/CLionProjects/Proyecto1/mserver_client.cpp
 
-CMakeFiles/Proyecto1.dir/mserver.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Proyecto1.dir/mserver.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/eduardo/CLionProjects/Proyecto1/mserver.cpp > CMakeFiles/Proyecto1.dir/mserver.cpp.i
+CMakeFiles/Proyecto1.dir/mserver_client.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Proyecto1.dir/mserver_client.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/eduardo/CLionProjects/Proyecto1/mserver_client.cpp > CMakeFiles/Proyecto1.dir/mserver_client.cpp.i
 
-CMakeFiles/Proyecto1.dir/mserver.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Proyecto1.dir/mserver.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/eduardo/CLionProjects/Proyecto1/mserver.cpp -o CMakeFiles/Proyecto1.dir/mserver.cpp.s
+CMakeFiles/Proyecto1.dir/mserver_client.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Proyecto1.dir/mserver_client.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/eduardo/CLionProjects/Proyecto1/mserver_client.cpp -o CMakeFiles/Proyecto1.dir/mserver_client.cpp.s
 
-CMakeFiles/Proyecto1.dir/mserver.cpp.o.requires:
+CMakeFiles/Proyecto1.dir/mserver_client.cpp.o.requires:
 
-.PHONY : CMakeFiles/Proyecto1.dir/mserver.cpp.o.requires
+.PHONY : CMakeFiles/Proyecto1.dir/mserver_client.cpp.o.requires
 
-CMakeFiles/Proyecto1.dir/mserver.cpp.o.provides: CMakeFiles/Proyecto1.dir/mserver.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Proyecto1.dir/build.make CMakeFiles/Proyecto1.dir/mserver.cpp.o.provides.build
-.PHONY : CMakeFiles/Proyecto1.dir/mserver.cpp.o.provides
+CMakeFiles/Proyecto1.dir/mserver_client.cpp.o.provides: CMakeFiles/Proyecto1.dir/mserver_client.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Proyecto1.dir/build.make CMakeFiles/Proyecto1.dir/mserver_client.cpp.o.provides.build
+.PHONY : CMakeFiles/Proyecto1.dir/mserver_client.cpp.o.provides
 
-CMakeFiles/Proyecto1.dir/mserver.cpp.o.provides.build: CMakeFiles/Proyecto1.dir/mserver.cpp.o
+CMakeFiles/Proyecto1.dir/mserver_client.cpp.o.provides.build: CMakeFiles/Proyecto1.dir/mserver_client.cpp.o
+
+
+CMakeFiles/Proyecto1.dir/Parser.cpp.o: CMakeFiles/Proyecto1.dir/flags.make
+CMakeFiles/Proyecto1.dir/Parser.cpp.o: ../Parser.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eduardo/CLionProjects/Proyecto1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Proyecto1.dir/Parser.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Proyecto1.dir/Parser.cpp.o -c /home/eduardo/CLionProjects/Proyecto1/Parser.cpp
+
+CMakeFiles/Proyecto1.dir/Parser.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Proyecto1.dir/Parser.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/eduardo/CLionProjects/Proyecto1/Parser.cpp > CMakeFiles/Proyecto1.dir/Parser.cpp.i
+
+CMakeFiles/Proyecto1.dir/Parser.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Proyecto1.dir/Parser.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/eduardo/CLionProjects/Proyecto1/Parser.cpp -o CMakeFiles/Proyecto1.dir/Parser.cpp.s
+
+CMakeFiles/Proyecto1.dir/Parser.cpp.o.requires:
+
+.PHONY : CMakeFiles/Proyecto1.dir/Parser.cpp.o.requires
+
+CMakeFiles/Proyecto1.dir/Parser.cpp.o.provides: CMakeFiles/Proyecto1.dir/Parser.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Proyecto1.dir/build.make CMakeFiles/Proyecto1.dir/Parser.cpp.o.provides.build
+.PHONY : CMakeFiles/Proyecto1.dir/Parser.cpp.o.provides
+
+CMakeFiles/Proyecto1.dir/Parser.cpp.o.provides.build: CMakeFiles/Proyecto1.dir/Parser.cpp.o
+
+
+CMakeFiles/Proyecto1.dir/Compiler.cpp.o: CMakeFiles/Proyecto1.dir/flags.make
+CMakeFiles/Proyecto1.dir/Compiler.cpp.o: ../Compiler.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eduardo/CLionProjects/Proyecto1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Proyecto1.dir/Compiler.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Proyecto1.dir/Compiler.cpp.o -c /home/eduardo/CLionProjects/Proyecto1/Compiler.cpp
+
+CMakeFiles/Proyecto1.dir/Compiler.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Proyecto1.dir/Compiler.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/eduardo/CLionProjects/Proyecto1/Compiler.cpp > CMakeFiles/Proyecto1.dir/Compiler.cpp.i
+
+CMakeFiles/Proyecto1.dir/Compiler.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Proyecto1.dir/Compiler.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/eduardo/CLionProjects/Proyecto1/Compiler.cpp -o CMakeFiles/Proyecto1.dir/Compiler.cpp.s
+
+CMakeFiles/Proyecto1.dir/Compiler.cpp.o.requires:
+
+.PHONY : CMakeFiles/Proyecto1.dir/Compiler.cpp.o.requires
+
+CMakeFiles/Proyecto1.dir/Compiler.cpp.o.provides: CMakeFiles/Proyecto1.dir/Compiler.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Proyecto1.dir/build.make CMakeFiles/Proyecto1.dir/Compiler.cpp.o.provides.build
+.PHONY : CMakeFiles/Proyecto1.dir/Compiler.cpp.o.provides
+
+CMakeFiles/Proyecto1.dir/Compiler.cpp.o.provides.build: CMakeFiles/Proyecto1.dir/Compiler.cpp.o
 
 
 # Object files for target Proyecto1
 Proyecto1_OBJECTS = \
 "CMakeFiles/Proyecto1.dir/main.cpp.o" \
 "CMakeFiles/Proyecto1.dir/Logger.cpp.o" \
-"CMakeFiles/Proyecto1.dir/mserver.cpp.o"
+"CMakeFiles/Proyecto1.dir/mserver_client.cpp.o" \
+"CMakeFiles/Proyecto1.dir/Parser.cpp.o" \
+"CMakeFiles/Proyecto1.dir/Compiler.cpp.o"
 
 # External object files for target Proyecto1
 Proyecto1_EXTERNAL_OBJECTS =
 
 Proyecto1: CMakeFiles/Proyecto1.dir/main.cpp.o
 Proyecto1: CMakeFiles/Proyecto1.dir/Logger.cpp.o
-Proyecto1: CMakeFiles/Proyecto1.dir/mserver.cpp.o
+Proyecto1: CMakeFiles/Proyecto1.dir/mserver_client.cpp.o
+Proyecto1: CMakeFiles/Proyecto1.dir/Parser.cpp.o
+Proyecto1: CMakeFiles/Proyecto1.dir/Compiler.cpp.o
 Proyecto1: CMakeFiles/Proyecto1.dir/build.make
 Proyecto1: CMakeFiles/Proyecto1.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/eduardo/CLionProjects/Proyecto1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable Proyecto1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/eduardo/CLionProjects/Proyecto1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable Proyecto1"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Proyecto1.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -153,7 +205,9 @@ CMakeFiles/Proyecto1.dir/build: Proyecto1
 
 CMakeFiles/Proyecto1.dir/requires: CMakeFiles/Proyecto1.dir/main.cpp.o.requires
 CMakeFiles/Proyecto1.dir/requires: CMakeFiles/Proyecto1.dir/Logger.cpp.o.requires
-CMakeFiles/Proyecto1.dir/requires: CMakeFiles/Proyecto1.dir/mserver.cpp.o.requires
+CMakeFiles/Proyecto1.dir/requires: CMakeFiles/Proyecto1.dir/mserver_client.cpp.o.requires
+CMakeFiles/Proyecto1.dir/requires: CMakeFiles/Proyecto1.dir/Parser.cpp.o.requires
+CMakeFiles/Proyecto1.dir/requires: CMakeFiles/Proyecto1.dir/Compiler.cpp.o.requires
 
 .PHONY : CMakeFiles/Proyecto1.dir/requires
 

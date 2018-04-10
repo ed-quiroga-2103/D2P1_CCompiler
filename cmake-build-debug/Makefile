@@ -123,6 +123,33 @@ Proyecto1/fast:
 	$(MAKE) -f CMakeFiles/Proyecto1.dir/build.make CMakeFiles/Proyecto1.dir/build
 .PHONY : Proyecto1/fast
 
+Compiler.o: Compiler.cpp.o
+
+.PHONY : Compiler.o
+
+# target to build an object file
+Compiler.cpp.o:
+	$(MAKE) -f CMakeFiles/Proyecto1.dir/build.make CMakeFiles/Proyecto1.dir/Compiler.cpp.o
+.PHONY : Compiler.cpp.o
+
+Compiler.i: Compiler.cpp.i
+
+.PHONY : Compiler.i
+
+# target to preprocess a source file
+Compiler.cpp.i:
+	$(MAKE) -f CMakeFiles/Proyecto1.dir/build.make CMakeFiles/Proyecto1.dir/Compiler.cpp.i
+.PHONY : Compiler.cpp.i
+
+Compiler.s: Compiler.cpp.s
+
+.PHONY : Compiler.s
+
+# target to generate assembly for a file
+Compiler.cpp.s:
+	$(MAKE) -f CMakeFiles/Proyecto1.dir/build.make CMakeFiles/Proyecto1.dir/Compiler.cpp.s
+.PHONY : Compiler.cpp.s
+
 Logger.o: Logger.cpp.o
 
 .PHONY : Logger.o
@@ -149,6 +176,33 @@ Logger.s: Logger.cpp.s
 Logger.cpp.s:
 	$(MAKE) -f CMakeFiles/Proyecto1.dir/build.make CMakeFiles/Proyecto1.dir/Logger.cpp.s
 .PHONY : Logger.cpp.s
+
+Parser.o: Parser.cpp.o
+
+.PHONY : Parser.o
+
+# target to build an object file
+Parser.cpp.o:
+	$(MAKE) -f CMakeFiles/Proyecto1.dir/build.make CMakeFiles/Proyecto1.dir/Parser.cpp.o
+.PHONY : Parser.cpp.o
+
+Parser.i: Parser.cpp.i
+
+.PHONY : Parser.i
+
+# target to preprocess a source file
+Parser.cpp.i:
+	$(MAKE) -f CMakeFiles/Proyecto1.dir/build.make CMakeFiles/Proyecto1.dir/Parser.cpp.i
+.PHONY : Parser.cpp.i
+
+Parser.s: Parser.cpp.s
+
+.PHONY : Parser.s
+
+# target to generate assembly for a file
+Parser.cpp.s:
+	$(MAKE) -f CMakeFiles/Proyecto1.dir/build.make CMakeFiles/Proyecto1.dir/Parser.cpp.s
+.PHONY : Parser.cpp.s
 
 main.o: main.cpp.o
 
@@ -177,32 +231,32 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/Proyecto1.dir/build.make CMakeFiles/Proyecto1.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-mserver.o: mserver.cpp.o
+mserver_client.o: mserver_client.cpp.o
 
-.PHONY : mserver.o
+.PHONY : mserver_client.o
 
 # target to build an object file
-mserver.cpp.o:
-	$(MAKE) -f CMakeFiles/Proyecto1.dir/build.make CMakeFiles/Proyecto1.dir/mserver.cpp.o
-.PHONY : mserver.cpp.o
+mserver_client.cpp.o:
+	$(MAKE) -f CMakeFiles/Proyecto1.dir/build.make CMakeFiles/Proyecto1.dir/mserver_client.cpp.o
+.PHONY : mserver_client.cpp.o
 
-mserver.i: mserver.cpp.i
+mserver_client.i: mserver_client.cpp.i
 
-.PHONY : mserver.i
+.PHONY : mserver_client.i
 
 # target to preprocess a source file
-mserver.cpp.i:
-	$(MAKE) -f CMakeFiles/Proyecto1.dir/build.make CMakeFiles/Proyecto1.dir/mserver.cpp.i
-.PHONY : mserver.cpp.i
+mserver_client.cpp.i:
+	$(MAKE) -f CMakeFiles/Proyecto1.dir/build.make CMakeFiles/Proyecto1.dir/mserver_client.cpp.i
+.PHONY : mserver_client.cpp.i
 
-mserver.s: mserver.cpp.s
+mserver_client.s: mserver_client.cpp.s
 
-.PHONY : mserver.s
+.PHONY : mserver_client.s
 
 # target to generate assembly for a file
-mserver.cpp.s:
-	$(MAKE) -f CMakeFiles/Proyecto1.dir/build.make CMakeFiles/Proyecto1.dir/mserver.cpp.s
-.PHONY : mserver.cpp.s
+mserver_client.cpp.s:
+	$(MAKE) -f CMakeFiles/Proyecto1.dir/build.make CMakeFiles/Proyecto1.dir/mserver_client.cpp.s
+.PHONY : mserver_client.cpp.s
 
 # Help Target
 help:
@@ -213,15 +267,21 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... Proyecto1"
+	@echo "... Compiler.o"
+	@echo "... Compiler.i"
+	@echo "... Compiler.s"
 	@echo "... Logger.o"
 	@echo "... Logger.i"
 	@echo "... Logger.s"
+	@echo "... Parser.o"
+	@echo "... Parser.i"
+	@echo "... Parser.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... mserver.o"
-	@echo "... mserver.i"
-	@echo "... mserver.s"
+	@echo "... mserver_client.o"
+	@echo "... mserver_client.i"
+	@echo "... mserver_client.s"
 .PHONY : help
 
 

@@ -84,19 +84,31 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/eduardo/CLionProjects/Proyecto1/Compiler.cpp">
+			<Option target="Proyecto1"/>
+		</Unit>
+		<Unit filename="/home/eduardo/CLionProjects/Proyecto1/Compiler.h">
+			<Option target="Proyecto1"/>
+		</Unit>
 		<Unit filename="/home/eduardo/CLionProjects/Proyecto1/Logger.cpp">
 			<Option target="Proyecto1"/>
 		</Unit>
 		<Unit filename="/home/eduardo/CLionProjects/Proyecto1/Logger.h">
 			<Option target="Proyecto1"/>
 		</Unit>
+		<Unit filename="/home/eduardo/CLionProjects/Proyecto1/Parser.cpp">
+			<Option target="Proyecto1"/>
+		</Unit>
+		<Unit filename="/home/eduardo/CLionProjects/Proyecto1/Parser.h">
+			<Option target="Proyecto1"/>
+		</Unit>
 		<Unit filename="/home/eduardo/CLionProjects/Proyecto1/main.cpp">
 			<Option target="Proyecto1"/>
 		</Unit>
-		<Unit filename="/home/eduardo/CLionProjects/Proyecto1/mserver.cpp">
+		<Unit filename="/home/eduardo/CLionProjects/Proyecto1/mserver_client.cpp">
 			<Option target="Proyecto1"/>
 		</Unit>
-		<Unit filename="/home/eduardo/CLionProjects/Proyecto1/mserver.h">
+		<Unit filename="/home/eduardo/CLionProjects/Proyecto1/mserver_client.h">
 			<Option target="Proyecto1"/>
 		</Unit>
 		<Unit filename="/home/eduardo/CLionProjects/Proyecto1/CMakeLists.txt">
