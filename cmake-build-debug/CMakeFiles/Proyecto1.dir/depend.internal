@@ -6,6 +6,7 @@ CMakeFiles/Proyecto1.dir/Compiler.cpp.o
  /home/eduardo/CLionProjects/Proyecto1/Compiler.h
  /home/eduardo/CLionProjects/Proyecto1/DataStructs/DataStructures.h
  /home/eduardo/CLionProjects/Proyecto1/DataStructs/DataStructures.tpp
+ /home/eduardo/CLionProjects/Proyecto1/Logger.h
  /home/eduardo/CLionProjects/Proyecto1/Parser.h
  /home/eduardo/CLionProjects/Proyecto1/mserver_client.h
  /home/eduardo/CLionProjects/Proyecto1/nlohmann/json.hpp
@@ -22,6 +23,7 @@ CMakeFiles/Proyecto1.dir/main.cpp.o
  /home/eduardo/CLionProjects/Proyecto1/Compiler.h
  /home/eduardo/CLionProjects/Proyecto1/DataStructs/DataStructures.h
  /home/eduardo/CLionProjects/Proyecto1/DataStructs/DataStructures.tpp
+ /home/eduardo/CLionProjects/Proyecto1/Logger.h
  /home/eduardo/CLionProjects/Proyecto1/Parser.h
  /home/eduardo/CLionProjects/Proyecto1/main.cpp
  /home/eduardo/CLionProjects/Proyecto1/mserver_client.h

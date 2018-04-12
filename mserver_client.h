@@ -21,6 +21,7 @@ using json = nlohmann::json;
 
 class mserver_client {
 public:
+    string data;
 
     mserver_client(int port);
 
@@ -43,7 +44,6 @@ public:
 
 private:
     int port;
-
 };
 
 

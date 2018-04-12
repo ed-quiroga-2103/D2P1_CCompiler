@@ -2,6 +2,7 @@
 // Created by eduardo on 02/04/18.
 //
 
+#include <iostream>
 #include "mserver_client.h"
 #include "string"
 
@@ -108,7 +109,7 @@ int mserver_client::sendJson(string msg) {
     //Received the data from the server
     read_size = SocketReceive(hSocket, server_reply, 200);
 
-
+    data = server_reply;
 
     close(hSocket);
     shutdown(hSocket,0);

@@ -26,8 +26,14 @@ json Parser::parseLine(string line) {
 
         string cmp = " ";
         string col = ";";
+        string ln = "\n";
 
-        if(line[i] == col[0]){
+        if(line[i] == ln[0]){
+
+            //Skips char
+
+        }
+        else if(line[i] == col[0]){
 
             j[count] = currentln;
             count++;
@@ -54,11 +60,7 @@ json Parser::parseLine(string line) {
 
     }
 
-    for(int i = 0; i < j.size(); i++){
-
-        std::cout << j[i] << std::endl;
-
-    }
+    j[count] = 0;
 
     return j;
 
@@ -71,10 +73,11 @@ SingleList<string> Parser::splitCode(string code){
     for(int i = 0; i < code.length() ; i++){
 
         string cmp = "\n";
+        string col = ";";
 
-        if(code[i] == cmp[0]){
+        if(code[i] == col[0]){
 
-
+            current.append(";");
             this->strings.newNode(current);
 
             current = "";
@@ -86,6 +89,11 @@ SingleList<string> Parser::splitCode(string code){
             copy = code[i];
             current.append(copy);
             this->strings.newNode(current);
+
+        }
+        else if(cmp[0] == code[i]){
+
+            //Skips char
 
         }
         else{

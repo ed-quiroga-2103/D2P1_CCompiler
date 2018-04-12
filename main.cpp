@@ -19,21 +19,10 @@ using string = std::string;
 int main(int argc , char *argv[])
 {
 
-    Compiler comp;
+    Compiler cmp;
+    Parser par;
 
-    json j;
-
-    j[0] = "int";
-    j[1] = "a";
-    j[2] = "=";
-    j[3] = "5";
-    j[4] = ";";
-
-    mserver_client client(90190);
-
-    comp.allocate("int a = 5;");
-
-    client.sendJson("break");
+    cmp.allocate("amt o = 2;");
 
     return 0;
 }

@@ -21,6 +21,8 @@ nlohmann/json.hpp
 /home/eduardo/CLionProjects/Proyecto1/nlohmann/json.hpp
 mserver_client.h
 /home/eduardo/CLionProjects/Proyecto1/mserver_client.h
+Logger.h
+/home/eduardo/CLionProjects/Proyecto1/Logger.h
 
 /home/eduardo/CLionProjects/Proyecto1/DataStructs/DataStructures.h
 cstdlib
@@ -101,6 +103,8 @@ Compiler.h
 /home/eduardo/CLionProjects/Proyecto1/Compiler.h
 
 /home/eduardo/CLionProjects/Proyecto1/mserver_client.cpp
+iostream
+-
 mserver_client.h
 /home/eduardo/CLionProjects/Proyecto1/mserver_client.h
 string
