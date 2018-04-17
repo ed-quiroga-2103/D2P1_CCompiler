@@ -19,14 +19,13 @@ Compiler::Compiler() {
  */
 bool Compiler::checkType(string type) {
 
-    for(int i = 0; i < 5; i++){
+    for(int i = 0; i < 10; i++){
 
         if(this->tokens[i] == type){
 
             return true;
 
         }
-
     }
 
     return false;
@@ -68,7 +67,7 @@ string Compiler::checkJson(string stream) {
 
     if(checkType(in[0])){
 
-        if(checkTag(in[1])){
+
 
             if(in[2] == "="){
 
@@ -80,14 +79,7 @@ string Compiler::checkJson(string stream) {
 
             }else return "Sintax error";
 
-        }else{
-            std::stringstream error;
 
-            error << "Double declaration of " << in[1];
-
-            return error.str();
-
-        }
     }
     else{
         std::stringstream error;
@@ -110,19 +102,83 @@ string Compiler::checkJson(string stream) {
 string Compiler::allocate(string str){
 
     SingleList<string> strings = parser.splitCode(str);
+    json in = parser.parseLine(strings[line]);
 
+    if(in[0] == "print"){
 
+        this->line++;
+        return in[2];
+
+    }
 
     if(checkJson(strings[line]) == "1") {
 
         json in = parser.parseLine(strings[line]);
+
         json msg;
 
+
         msg["type"] = in[0];
-
         msg["tag"] = in[1];
-
         msg["val"] = in[3];
+        msg["cmplx"] = 0;
+
+        if(checkForRef(in)){
+
+            msg["val"] = missOp(in);
+            msg["cmplx"] = 1;
+        }
+        else if(checkForDRef(in)){
+
+            msg["val"] = missOp(in);
+            msg["cmplx"] = 2;
+        }
+
+        if(msg["cmplx"] == 1 || msg["cmplx"] == 2) {
+
+            //Checks if the value being referenced exists
+            for (int i = 0; i < this->tags.getLength(); i++) {
+
+                //Checks if the value is included in the allocated tags
+                if (this->tags[i] == msg["val"]) {
+
+                    if(isTypeRef(msg) && msg["cmplx"] == 1) {
+
+                        this->tags.newNode(msg["tag"]);
+                        this->types.newNode(msg["type"]);
+                        this->vals.newNode(msg["val"]);
+
+                        //Sends json through the server client
+                        client->sendJson(msg.dump());
+                        this->line++;
+                        return "Success";
+
+
+                    }else if(msg["cmplx"] == 2){
+
+                        this->tags.newNode(msg["tag"]);
+                        this->types.newNode(msg["type"]);
+                        this->vals.newNode(msg["val"]);
+
+                        client->sendJson(msg.dump());
+                        this->line++;
+                        return "Success";
+
+                    }
+                    else{
+                        this->line++;
+                        return "Value is not a reference";
+
+                    }
+                }
+
+            }
+
+            this->line++;
+
+            return "Value has not been defined";
+
+        }
 
         this->tags.newNode(msg["tag"]);
         this->types.newNode(msg["type"]);
@@ -134,24 +190,23 @@ string Compiler::allocate(string str){
     else{
 
         log.newLog(checkJson(strings[line]),line);
+        this->line++;
         return checkJson(strings[line]);
         }
+
+    this->line++;
     return "Success";
     }
 
-
-
-bool Compiler::checkForOp(json j) {
+bool Compiler::checkForRef(json j) {
 
     if(j[j.size()-1]==0){
 
         string val = j[3];
 
-        string ops = "*&";
+        string ops = "&";
 
-        if(val[0] == ops[0] || val[0] == ops[1]){
-
-
+        if(val[0] == ops[0]){
 
             return true;
 
@@ -171,7 +226,66 @@ bool Compiler::checkForOp(json j) {
 
 }
 
+bool Compiler::checkForDRef(json j) {
+
+    if(j[j.size()-1]==0){
+
+        string val = j[3];
+
+        string ops = "*";
+
+        if(val[0] == ops[0]){
+
+            return true;
+
+        }else{
+
+            return false;
+
+        }
+
+
+    }
+    else{
+
+        return false;
+
+    }
+
+}
+
+bool Compiler::isTypeRef(json j) {
+
+    string tokens[5] = {"reference<int>", "reference<long>", "reference<char>", "reference<double>", "reference<float>"};
+
+    for(int i = 0; i < 5; i++){
+
+        if(tokens[i] == j["type"]){
+
+            return true;
+
+        }
+
+    }
+    return false;
+
+}
+
 string Compiler::pull() {
     client->sendJson("pull");
     return this->client->data;
+}
+
+string Compiler::missOp(json j) {
+
+    string val = j[3];
+    string newVal = "";
+
+    for(int i = 1; i < val.length(); i++){
+
+        newVal+= val[i];
+
+    }
+
+    return newVal;
 }

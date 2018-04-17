@@ -23,8 +23,8 @@ private:
     mserver_client* client;
     int line = 0;
 
-    string tokens[5] = {"int", "long", "double", "float", "char"};
-
+    string tokens[10] = {"int", "long", "double", "float", "char", "reference<int>", "reference<long>",
+                        "reference<double>", "reference<float>", "reference<char>"};
 
 public:
 
@@ -36,13 +36,16 @@ public:
 
     bool checkType(string type);
     bool checkTag(string tag);
-    bool checkForOp(json j);
+    bool checkForRef(json j);
+    bool checkForDRef(json j);
+    bool isTypeRef(json j);
+    bool isValRef(json j);
 
     string checkJson(string stream);
 
     string allocate(string str);
     string pull();
-
+    string missOp(json j);
 };
 
 

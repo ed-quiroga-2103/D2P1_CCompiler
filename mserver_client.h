@@ -44,6 +44,7 @@ public:
 
 private:
     int port;
+    int size = 0;
 };
 
 

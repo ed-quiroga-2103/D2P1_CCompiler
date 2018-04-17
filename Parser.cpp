@@ -16,21 +16,48 @@ Parser::Parser() {}
 
 json Parser::parseLine(string line) {
 
+    bool firstChecked = false;
+
+    bool inPrint = false;
+
     json j;
 
     string currentln = "";
 
     int count = 0;
 
+
     for(int i = 0; i < line.length(); i++){
 
         string cmp = " ";
         string col = ";";
         string ln = "\n";
-
+        string cmp1 = "(";
+        string cmp2 = ")";
         if(line[i] == ln[0]){
 
             //Skips char
+
+        }
+        else if(line[i] == cmp1[0]){
+
+            j[count] = currentln;
+            currentln = "";
+            count++;
+            j[count] = "(";
+            inPrint = true;
+            count++;
+
+
+
+        }else if(line[i] == cmp2[0]){
+
+            j[count] = currentln;
+            currentln = "";
+            count++;
+            j[count] = ")";
+            count++;
+            inPrint = true;
 
         }
         else if(line[i] == col[0]){
@@ -43,7 +70,14 @@ json Parser::parseLine(string line) {
             count++;
 
         }
-        else if(!(line[i] == cmp[0])){
+        else if(line[i] != cmp[0]){
+
+            string copy;
+            copy = line[i];
+            currentln.append(copy);
+            firstChecked = true;
+
+        }else if(!firstChecked || inPrint){
 
             string copy;
             copy = line[i];

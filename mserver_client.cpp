@@ -102,12 +102,13 @@ int mserver_client::sendJson(string msg) {
 
     strcpy(SendToServer, msg.c_str());
 
+    size+= msg.size();
+
     //Send data to the server
     SocketSend(hSocket, SendToServer, strlen(SendToServer));
 
-
     //Received the data from the server
-    read_size = SocketReceive(hSocket, server_reply, 200);
+    read_size = SocketReceive(hSocket, server_reply, size);
 
     data = server_reply;
 

@@ -22,7 +22,30 @@ int main(int argc , char *argv[])
     Compiler cmp;
     Parser par;
 
-    cmp.allocate("amt o = 2;");
+
+    /*
+     * ARREGLE SWITCH VAL
+     * ARREGLE SWITCH VAL
+     * ARREGLE SWITCH VAL
+     * ARREGLE SWITCH VAL
+     * ARREGLE SWITCH VAL
+     * ARREGLE SWITCH VAL
+     * ARREGLE SWITCH VAL
+     */
+
+    string code = "int a = 4;int a = 56;";
+
+
+    std::cout << cmp.allocate(code) << endl;
+
+
+    cout << cmp.pull() << endl;
+    cout << endl;
+
+    std::cout << cmp.allocate(code) << endl;
+
+
+    cout << cmp.pull() << endl;
 
     return 0;
 }
